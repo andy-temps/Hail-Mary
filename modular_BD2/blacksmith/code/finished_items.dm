@@ -753,6 +753,33 @@
 	inhand_y_dimension = 64
 
 
+// ------------ PIKE ------------ // [Reach+1, armor pen]
+/obj/item/twohanded/smithed/spear/pike
+	name = "pike"
+	desc = "A spear, but more. This very long weapon has even more reach than a normal spear but is a bit unwieldy to use, downright impossible up close."
+	icon_state = "pike_smith"
+	lefthand_file = 'modular_BD2/blacksmith/icons/onmob/64x64_lefthand.dmi'
+	righthand_file = 'modular_BD2/blacksmith/icons/onmob/64x64_righthand.dmi'
+	overlay_state = "shaft_spear"
+	wielded_icon = "pike_smith_wield"
+	icon_prefix = "pike_smith"
+	flags_1 = CONDUCT_1
+	force = (FORCE_SMITH_REACH-1)
+	wielded_mult = 1.5
+	throwforce = THROWING_POOR
+	wound_bonus = WOUNDING_BONUS_BIG
+	bare_wound_bonus = WOUNDING_BONUS_SMALL
+	armour_penetration = PIERCING_MODERATE
+	min_reach = 2
+	max_reach = 3
+	sharpness = SHARP_pointy
+	w_class = WEIGHT_CLASS_NORMAL
+	attack_verb = list("impaled", "gored", "stabbed")
+	hitsound = 'sound/weapons/slice.ogg'
+	attack_speed = MELEE_SPEED_SLOW
+	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON * 1.2
+
+
 // ------------ TRIDENT ------------ // [Reach Embed]
 /obj/item/twohanded/smithed/spear/trident
 	name = "trident"
